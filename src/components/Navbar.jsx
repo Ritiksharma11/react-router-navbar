@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { FaBars } from "react-icons/fa";
 import { MdOutlineClose } from "react-icons/md";
 import { useState } from 'react';
@@ -11,10 +11,10 @@ const Navbar = () => {
             <nav>
                 <div className="logo"><Link to='/'>Logo</Link> </div>
                 <div className="links">
-                    <Link to='/'>Home</Link>
-                    <Link to='/about'>About</Link>
-                    <Link to='/projects'>Projects</Link>
-                    <Link to='/contact'>Contact</Link>
+                    <NavLink to='/'>Home</NavLink>
+                    <NavLink to='/about'>About</NavLink>
+                    <NavLink to='/projects'>Projects</NavLink>
+                    <NavLink to='/contact'>Contact</NavLink>
                 </div>
                 <div className="start-btn">Get Started</div>
                 <div className="mobile-nav-icons">

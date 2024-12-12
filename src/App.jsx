@@ -5,6 +5,9 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Home from './pages/Home'
 import Projects from './pages/Projects'
+import ContactInfo from './pages/ContactInfo'
+import ContactForm from './pages/ContactForm'
+import NotFound from './pages/NotFound'
 
 const App = () => {
   return (
@@ -16,6 +19,9 @@ const App = () => {
           <Route path='/about' element={<About />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/contact/info' element={<ContactInfo />} />
+          <Route path='/contact/form' element={<ContactForm />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </div>
     </div>
